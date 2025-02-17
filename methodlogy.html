@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Methodology</title>
+</head>
+<body>
+    <h1 align="center">Methodology</h1>
+    <p>The IoT and AI-based smart plant watering system ensures efficient irrigation and water conservation using sensor-driven automation and machine learning.</p>
+    <ul>
+        <li><strong>ESP32 Microcontroller:</strong> Serves as the central processing unit, integrating data from multiple sensors and controlling actuators for efficient irrigation.</li>
+        <li><strong>Sensors:</strong> 
+            <ul>
+                <li>Soil moisture sensors detect real-time moisture levels and relay data to the microcontroller.</li>
+                <li>DHT11 records temperature and humidity, which are crucial for plant health and irrigation adjustments.</li>
+                <li>Water flow sensors track water usage to monitor efficiency and detect anomalies.</li>
+            </ul>
+        </li>
+        <li><strong>Watering System:</strong> 
+            <ul>
+                <li>Solenoid valves regulate water flow based on real-time sensor readings.</li>
+                <li>A relay module controls valve activation, ensuring precise irrigation.</li>
+                <li>A water pump maintains a steady supply, optimizing water distribution.</li>
+            </ul>
+        </li>
+        <li><strong>Modes of Operation:</strong>
+            <ul>
+                <li><strong>Manual Mode:</strong> Users control watering via a mobile app with real-time monitoring.</li>
+                <li><strong>Auto Mode:</strong> The system autonomously waters plants based on soil moisture levels, reducing human intervention.</li>
+                <li><strong>AI Mode:</strong> Utilizes machine learning to predict water requirements, adjusting based on environmental parameters.</li>
+            </ul>
+        </li>
+        <li><strong>Model Training:</strong>
+            <ul>
+                <li>Sensor data (temperature, humidity, soil moisture, and water flow) is collected and preprocessed.</li>
+                <li>Two linear regression models are trained:
+                    <ul>
+                        <li><strong>User Model:</strong> Trained on user watering patterns to replicate user behavior.</li>
+                        <li><strong>Optimal Model:</strong> Trained using standard plant growth requirements to determine ideal water usage.</li>
+                    </ul>
+                </li>
+                <li>Google Colab is used for training, leveraging Python libraries such as NumPy, Pandas, and Scikit-learn.</li>
+                <li>The trained models are deployed on the ESP32 microcontroller, enabling real-time irrigation adjustments.</li>
+                <li>The AI models continuously update and improve over time with new data, refining their predictions for better efficiency.</li>
+                <li>The system compares user watering habits with optimal watering recommendations to improve conservation and efficiency.</li>
+            </ul>
+        </li>
+        <li><strong>System Integration:</strong>
+            <ul>
+                <li>The microcontroller communicates with cloud storage to log data and improve machine learning insights.</li>
+                <li>Users can access system updates and analytics via our website.</li>
+                <li>Wireless communication ensures seamless remote monitoring and control.</li>
+            </ul>
+        </li>
+        <li><strong>Dataset:</strong>
+            <ul>
+                <li>We are using a publicly available dataset from Kaggle for predicting plant watering needs: <a href="https://www.kaggle.com/datasets/nelakurthisudheer/dataset-for-predicting-watering-the-plants" target="_blank">Dataset for Predicting Watering the Plants</a>.</li>
+                <li>The dataset contains temperature, humidity, soil moisture, which help train and refine the AI models.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
