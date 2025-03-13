@@ -1,64 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Components</title>
+    <title>Automated Irrigation System - Components</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #2a9d8f;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1 align="center">Components</h1>
-    
-    <ul>
-        <li><strong>Microcontroller: ESP32</strong>
-            <ul>
-                <li>Serves as the central processing unit.</li>
-                <li>Provides robust computational capabilities and flexible GPIO features.</li>
-                <li>Enables reliable Wi-Fi connectivity for communication between sensors and actuators.</li>
-            </ul>
-        </li>
-        <li><strong>Rain Sensor</strong>
-            <ul>
-                <li>Detects rain and provides real-time updates on weather conditions.</li>
-                <li>Helps pause irrigation if rainfall is detected.</li>
-                <li>Warns users to adjust irrigation schedules dynamically.</li>
-            </ul>
-        </li>
-        <li><strong>Soil Moisture Sensors</strong>
-            <ul>
-            <li>Sends signals to the microcontroller to trigger irrigation based on moisture thresholds.</li>
-<li>Helps in optimizing water usage and preventing over-irrigation.</li>
-            </ul>
-        </li>
-        <li><strong>DHT11 Sensor</strong>
-            <ul>
-                <li>Measures ambient temperature and humidity.</li>
-                
-                <li>Provides digital output, making it easy to interface with microcontrollers.</li>
-                <li>Supports AI-driven irrigation adjustments by supplying real-time environmental data.</li>
-            </ul>
-        </li>
-        <li><strong>Water Flow Sensor</strong>
-            <ul>
-                <li>Tracks the amount of water flowing through the system.</li>
-                <li>Provides accurate water usage data.</li>
-                
-            </ul>
-        </li>
-        <li><strong>Solenoid Valves</strong>
-            <ul>
-                <li>Regulates water flow through the system.</li>
-                <li>Controlled by a 4-channel relay for precise irrigation.</li>
-                <li>Ensures targeted water distribution.</li>
-            </ul>
-        </li>
-        <li><strong>Stepdown Module</strong>
-            <ul>
-                <li>Converts 12V power from an AC-DC adapter to required voltage levels.</li>
-                <li>Ensures stable power supply for ESP32 microcontroller.</li>
-                <li>Protects system integrity through efficient power management.</li>
-            </ul>
-        </li>
-    </ul>
+    <h2>⚡ Automated Irrigation System - Components</h2>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td>Arduino Uno</td>
+            <td>Microcontroller to control the system</td>
+        </tr>
+        <tr>
+            <td>Soil Moisture Sensor</td>
+            <td>Detects the soil moisture level</td>
+        </tr>
+        <tr>
+            <td>Water Pump</td>
+            <td>Pumps water to the plants when needed</td>
+        </tr>
+        <tr>
+            <td>Relay Module</td>
+            <td>Controls the power to the water pump</td>
+        </tr>
+        <tr>
+            <td>LCD Display</td>
+            <td>Displays soil moisture readings and system status</td>
+        </tr>
+        <tr>
+            <td>DHT11 Sensor</td>
+            <td>Measures temperature and humidity</td>
+        </tr>
+        <tr>
+            <td>Power Supply (Battery/Solar Panel)</td>
+            <td>Provides power to the system</td>
+        </tr>
+        <tr>
+            <td>Jumper Wires</td>
+            <td>Connects the components</td>
+        </tr>
+        <tr>
+            <td>Resistors & Breadboard</td>
+            <td>Used for circuit connections</td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuit Components</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #2a9d8f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>⚡ How the Circuit Works?</h2>
+    <table>
+        <tr>
+            <th>Component</th>
+            <th>Pin</th>
+            <th>Connected To (Arduino/Others)</th>
+            <th>Purpose</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Power Rails</td>
+            <td>+ (Positive)</td>
+            <td>5V (Arduino)</td>
+            <td>Provides power to all components</td>
+        </tr>
+        <tr>
+            <td>- (Negative)</td>
+            <td>GND (Arduino)</td>
+            <td>Common ground connection</td>
+        </tr>
+        <tr>
+            <td rowspan="3">DHT Sensor</td>
+            <td>VCC</td>
+            <td>5V (Arduino)</td>
+            <td>Powers the DHT sensor</td>
+        </tr>
+        <tr>
+            <td>GND</td>
+            <td>GND (Arduino)</td>
+            <td>Completes the circuit</td>
+        </tr>
+        <tr>
+            <td>A0</td>
+            <td>A0 (Arduino)</td>
+            <td>Reads the sensor data</td>
+        </tr>
+        <tr>
+            <td rowspan="4">LCD Display</td>
+            <td>VCC</td>
+            <td>5V (Arduino)</td>
+            <td>Powers the LCD display</td>
+        </tr>
+        <tr>
+            <td>GND</td>
+            <td>GND (Arduino)</td>
+            <td>Common ground connection</td>
+        </tr>
+        <tr>
+            <td>SDA</td>
+            <td>A4 (Arduino)</td>
+            <td>Data line for communication</td>
+        </tr>
+        <tr>
+            <td>SCL</td>
+            <td>A5 (Arduino)</td>
+            <td>Clock line for synchronization</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Relay Module</td>
+            <td>VCC</td>
+            <td>5V (Arduino)</td>
+            <td>Powers the relay module</td>
+        </tr>
+        <tr>
+            <td>GND</td>
+            <td>GND (Arduino)</td>
+            <td>Common ground connection</td>
+        </tr>
+        <tr>
+            <td>IN</td>
+            <td>Digital Pin 7 (Arduino)</td>
+            <td>Controls the relay</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Pump</td>
+            <td>Positive Wire</td>
+            <td>Open Terminal of Relay</td>
+            <td>Power is supplied when relay is active</td>
+        </tr>
+        <tr>
+            <td>Negative Wire</td>
+            <td>Battery Negative</td>
+            <td>Completes the circuit
