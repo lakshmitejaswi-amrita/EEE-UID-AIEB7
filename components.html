@@ -1,77 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automated Irrigation System - Components</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-        }
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        th {
-            background: #2a9d8f;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Components | Smart Plant Watering System</title>
+  <style>
+    body {
+      background-color: #f0fdf4;
+      color: #1f2937;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 16px 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #047857;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 16px;
+    }
+    main {
+      max-width: 768px;
+      margin: 64px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #065f46;
+      margin-bottom: 16px;
+    }
+    ul {
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.6;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 16px;
+    }
+  </style>
 </head>
 <body>
-    <h2>⚡ Automated Irrigation System - Components</h2>
-    <table>
-        <tr>
-            <th>Component</th>
-            <th>Purpose</th>
-        </tr>
-        <tr>
-            <td>Arduino Uno</td>
-            <td>Microcontroller to control the system</td>
-        </tr>
-        <tr>
-            <td>Soil Moisture Sensor</td>
-            <td>Detects the soil moisture level</td>
-        </tr>
-        <tr>
-            <td>Water Pump</td>
-            <td>Pumps water to the plants when needed</td>
-        </tr>
-        <tr>
-            <td>Relay Module</td>
-            <td>Controls the power to the water pump</td>
-        </tr>
-        <tr>
-            <td>LCD Display</td>
-            <td>Displays soil moisture readings and system status</td>
-        </tr>
-        <tr>
-            <td>DHT11 Sensor</td>
-            <td>Measures temperature and humidity</td>
-        </tr>
-        <tr>
-            <td>Power Supply (Battery/Solar Panel)</td>
-            <td>Provides power to the system</td>
-        </tr>
-        <tr>
-            <td>Jumper Wires</td>
-            <td>Connects the components</td>
-        </tr>
-        <tr>
-            <td>Resistors & Breadboard</td>
-            <td>Used for circuit connections</td>
-        </tr>
-    </table>
+  <header>
+    <div class="header-container">
+      <h1>Smart Plant Watering System</h1>
+      <a href="main.html">&larr; Back to Home</a>
+    </div>
+  </header>
+
+  <main>
+    <h2>Components Used</h2>
+    <ul>
+      <li><strong>Arduino Uno:</strong> Acts as the brain of the system, processing sensor data and controlling the pump.</li>
+      <li><strong>Soil Moisture Sensor:</strong> Detects the level of moisture in the soil to determine if watering is needed.</li>
+      <li><strong>Water Pump:</strong> Delivers water to the plant when triggered by the Arduino.</li>
+      <li><strong>Relay Module:</strong> Switches the pump ON or OFF based on the control signal from Arduino.</li>
+      <li><strong>Power Supply (Battery/Adapter):</strong> Provides necessary voltage to operate the circuit.</li>
+      <li><strong>Jumper Wires & Breadboard:</strong> For circuit prototyping and connections.</li>
+    </ul>
+  </main>
 </body>
 </html>

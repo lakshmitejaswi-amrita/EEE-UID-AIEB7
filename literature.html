@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Literature Review</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Literature Review | Smart Plant Watering System</title>
+  <style>
+    body {
+      background-color: #f0fdf4;
+      color: #1f2937;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 16px 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #047857;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 16px;
+    }
+    main {
+      max-width: 768px;
+      margin: 64px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #065f46;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="header-container">
+      <h1>Smart Plant Watering System</h1>
+      <a href="main.html">&larr; Back to Home</a>
+    </div>
+  </header>
 
-    <h1 align="center">Literature Review</h1>
-
-    <table border="1" width="100%">
-        <tr>
-            <th>Paper Title</th>
-            <th>Year</th>
-            <th>Methodology</th>
-            <th>Key Contributions</th>
-        </tr>
-
-        <tr>
-            <td>IoT-Based Automatic Plant Watering System</td>
-            <td>2020</td>
-            <td>
-                <ul>
-                    <li>Used NodeMCU microcontroller.</li>
-                    <li>Soil moisture sensors & relay-controlled water pump.</li>
-                    <li>Data sent to Blynk IoT platform.</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>Automated irrigation system.</li>
-                    <li>Real-time monitoring.</li>
-                    <li>Water-efficient irrigation.</li>
-                </ul>
-            </td>
-        </tr>
-
-        <tr>
-            <td>IoT and AI-Based Smart Plant Watering System</td>
-            <td>2024</td>
-            <td>
-                <ul>
-                    <li>ESP32 microcontroller.</li>
-                    <li>Three modes: Manual, Automatic, AI-based.</li>
-                    <li>Water data analyzed using Google Colab.</li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <li>AI-driven smart watering system.</li>
-                    <li>Mobile app for control.</li>
-                    <li>Optimized water usage.</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-
+  <main>
+    <h2>Literature Review</h2>
+    <p>
+      This paper describes an automated plant watering system designed to reduce manual intervention and optimize water usage for home gardens and agricultural fields. The system is built around an ATmega328 microcontroller, which monitors real-time soil moisture using a sensor and controls a water pump through a relay module. When the moisture level drops below a defined threshold, the pump is triggered to water the plant. Additionally, the system includes a mobile application that notifies users about the system’s status and alerts them to refill the water tank when needed. With its scheduled watering capability and sensor-based control, the system ensures efficient irrigation while maintaining plant health and minimizing water wastage. [1]
+    </p>
+    <p>
+      Another paper outlines an automated plant watering system designed to improve irrigation efficiency and reduce manual labor. The system utilizes an Arduino UNO R3 and a soil moisture sensor to monitor soil moisture levels in real-time. When the soil dries out, a relay-controlled submersible pump is triggered to irrigate the plants. The system can target specific areas of a field using multiple sensors and includes a rain detection feature to prevent unnecessary watering during rainfall. Additionally, a mobile interface allows farmers to control and monitor the system, promoting water conservation and smarter farming practices, particularly in areas with labor shortages or inconsistent rainfall. [2]
+    </p>
+    <p>
+      A third study presents an Arduino Nano-based automated gardening system using a soil moisture sensor, relay module, and water pump to maintain optimal soil moisture. The system automatically waters the plant when dryness is detected and stops when sufficient moisture is reached. Simulation in Proteus ensured system reliability, and the authors emphasized its potential for sustainable agriculture and future integration with AI. [3]
+    </p>
+  </main>
 </body>
 </html>

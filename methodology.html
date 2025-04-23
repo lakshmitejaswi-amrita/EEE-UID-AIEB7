@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Methodology</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-        }
-        ol {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology | Smart Plant Watering System</title>
+  <style>
+    body {
+      background-color: #f0fdf4;
+      color: #1f2937;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: white;
+      padding: 16px 24px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #047857;
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #1f2937;
+      font-size: 16px;
+    }
+    main {
+      max-width: 768px;
+      margin: 64px auto;
+      padding: 0 24px;
+    }
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #065f46;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 18px;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Methodology</h2>
-        <ol>
-            <li>Identified required components and designed the circuit layout.</li>
-            <li>Defined system objectives and operational parameters.</li>
-            <li>Connected the soil moisture sensor to Arduino to detect moisture levels.</li>
-            <li>Integrated the relay module to control the water pump.</li>
-            <li>Connected the LCD display for real-time status updates.</li>
-        </ol>
+  <header>
+    <div class="header-container">
+      <h1>Smart Plant Watering System</h1>
+      <a href="main.html">&larr; Back to Home</a>
     </div>
+  </header>
+
+  <main>
+    <h2>Methodology</h2>
+    <p>
+      Our approach involves the integration of a soil moisture sensor with a microcontroller (Arduino UNO) that continuously monitors the moisture level of the soil. When the soil dries beyond a threshold, a signal is sent to activate a water pump, delivering water to the plants.
+    </p>
+    <p>
+      The components are connected in such a way that the sensor data is read at regular intervals. Based on the moisture value, a decision is made to water the plant or keep the pump off. The system is powered using a 5V source and mounted on a simple frame for practical deployment.
+    </p>
+    <p>
+      Additional features such as an LED indicator and serial monitoring via the Arduino IDE allow real-time debugging and status updates.
+    </p>
+  </main>
 </body>
 </html>
